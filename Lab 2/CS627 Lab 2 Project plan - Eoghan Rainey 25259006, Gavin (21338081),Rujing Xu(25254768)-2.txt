@@ -1,0 +1,24 @@
+Event Ticketing System Project Plan:
+
+We decided to do option 3 as we felt we could achieve and enjoy building the advanced features. 
+
+Step 1:
+To begin on the assignment deliverables we created our parent class 'Ticket' and added the class attributes eventName, date, price. We then made out constructor and getter and setter methods for our attributes along with a generateSummary() method which prints all the attributes in the class for an instance of a ticket.
+
+Step 2:
+We created our subclasses ConcertTicket, SportsTicket, ConferenceTicket inheriting attributes from our Ticket class and added special attributes for each subclass:
+ for SportTicket: (Team: takes two team names as a string parameter)
+ for ConcertTicket (Performer: takes a string- performer's name)
+ for ConferenceTicket (Speaker: takes a string parameter for speaker's name)
+Details of these instances of tickets in each subclass can be shown using the generateSummary() method, overriding the parameters with the selected ticket's attributes.
+These subclasses also have their own child classes, Team, Speaker, Performer with some attributes also.
+
+Step 3:
+We set up our AccessPackage class with attributes int SeatingInfo, String VIPPerks, and a Boolean value for digitalAccess and introduced instances of them into each of our classes.
+
+Advanced Attributes:
+We created a discount and no discount, and a PercentageDiscountPolicy class and used validation to apply discounts to certain user’s purchases. We also created our TicketBundle class which allows users to add and remove tickets from their bundle and apply discounts and return a subtotal value to the user.
+
+
+Finally we created a main method which demos the features of the project.
+

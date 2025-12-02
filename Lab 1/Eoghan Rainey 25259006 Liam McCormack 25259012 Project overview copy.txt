@@ -1,0 +1,9 @@
+Library project overview:
+
+We first started off by making our Book class and library classes to create instances of books and a library. We added the required attitributes and constructors and getter and setter methods for each parameter with appropriate encapsulation. We made sure the methods for returning and checking out books and it’s query function had apporopriate validation using boolean values. In the library class we used a loop four our search by author and title functions to filter results of Book objects in our list to add to a new filtered list(or in the case of search by author, this function returns only a single book object, as detailed in the question).
+
+
+To test our code we created methods to create instances of books and added that list to our library class. We then checked if our validation for checking books out and returning was working along with some of our getter and setter methods. After thinking about how to create a functioning member class we decided that we needed to make member objects and add them to our library (as though adding members to an actual library). We then discovered to make a history feature we needed to add a member object as an input parameter for our checkBookOut method, so we could then add this book to a members history. We then added a function to add members to our library and our addToHistory and getHistory functions before testing out our member’s history functionality in the test class. We tested how the checkBookOut and checkBookIn functions effected members history also. 
+
+
+Overall we created a project that delivers what the question asks for, it can add books to a library, track whether they are available or not using appropriate validation and list all available books by using the function listAvailableBooks(), returning the list ‘availableList’.

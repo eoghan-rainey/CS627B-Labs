@@ -1,0 +1,5 @@
+Code summary:
+A base abstract class (Pet) holds the common details for all pets (name, breed, age, type, sound). It includes a final constant, a final method, and an abstract method that each subclass implements. Three subclasses are used: Dog, Cat, and Rescue. Each one calls super in the constructor, overrides the abstract behaviour, and adds its own extra field (toy, food, or injury).
+An Adoptable interface provides a default method for adoption terms and a static method for the general welcome message. Dog and Cat implement the interface. An Adoption helper class handles adopting a pet.
+A PetType enum is used to categorise pets. The system also tracks how many pets exist using a static counter in the Pet class.
+All pets are stored in a mixed ArrayList<Pet>. The Printer utility class includes a static method that uses instanceof and casting to check the actual type and print the correct details
