@@ -35,6 +35,8 @@ public class Test {
         library.searchByTitle("book2").checkBookOut(member2);
         System.out.println("Book is checked out? " + library.searchByTitle("book2").isCheckedOut());
         System.out.println(member2.getHistory().get(1).getTitle());
+
+        System.out.println("Member 2 has checked out " + member2.getHistory().size() + " books.");
     }
 
     //function to add books into our library
